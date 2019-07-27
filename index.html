@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WorldNet</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+        
+
+    <table class="tabla">
+            <tr>
+                <td class="es"><input type="text" id="name" placeholder="Nombre" class="nombre"></td>
+                <td class="time"><input type="month" id="name" placeholder="Fecha" class="fecha"></td>
+                
+            </tr>
+
+            <tr>
+                <td class="d"><input type="text" id="direccion" placeholder="Direccion" class="direccion-2"></td>
+            <td class="m"><input type="text" id="direccion" placeholder="Municipio" class="municipio"></td>
+            <td class="de"><input type="text" id="departamento" placeholder="Departamento" class="dir"></td>
+    
+            </tr>
+
+    </table>
+
+    <table>
+        <td class="registro"><input type="number" id="regist" placeholder="Registro De IVA" class="resgistr"></td>
+    <td class="nt"><input type="number" id="nit" placeholder="NIT" class="ni"></td>
+    </table>
+
+    <table>
+        <td class="g"><input type="text" id="gi" placeholder="GIRO" class="gr"></td> 
+    </table>
+
+    <table>
+        <td class="cd"><input type="text" id="cp" placeholder="Condiciones De Pago" class="cm"></td>
+        <td class="vd"><input type="text" id="vc" placeholder="Venta A Cuenta De" class="vde"></td>  
+    </table>
+
+    <table>
+        <td class="ctn"><input type="number" id="nm" placeholder="Cantidad" class="cat"></td>
+        <td class="des"><input type="text" id="txt" placeholder="Descripcion" class="tx"></td>
+        <td class="va"><input type="number" id="vt" placeholder="Precio Unitario" class="xcv"></td>
+        <td class="va"><input type="number" id="vt" placeholder="Ventas Afectas" class="xcv"></td>    
+    </table>
+    
+    <table>
+        <td class="can"><input type="text" id=cant placeholder="" class="cnac"></td>
+        <td class="can"><input type="text" id=cpr placeholder="" class="pod"></td>
+        <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td>
+        <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td> 
+    </table>
+
+    <table>
+        <td class="can"><input type="text" id=cant placeholder="" class="cnac"></td>
+        <td class="can"><input type="text" id=cpr placeholder="" class="pod"></td>
+        <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td>
+        <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td> 
+    </table>
+
+    <table>
+            <td class="can"><input type="text" id=cant placeholder="" class="cnac"></td>
+            <td class="can"><input type="text" id=cpr placeholder="" class="pod"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td> 
+    </table>
+    
+    <table>
+            <td class="can"><input type="text" id=cant placeholder="" class="cnac"></td>
+            <td class="can"><input type="text" id=cpr placeholder="" class="pod"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td> 
+    </table>
+
+    <table>
+            <td class="can"><input type="text" id=cant placeholder="" class="cnac"></td>
+            <td class="can"><input type="text" id=cpr placeholder="" class="pod"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td>
+            <td class="va"><input type="number" id="vt" placeholder="" class="xcv"></td> 
+
+    <table>
+        <td class="son"><input type="text" id=sn placeholder="SON :" class="cso"></td>
+    </table>
+   
+   
+<script>
+
+function Suma() 
+	{
+		var valorA = parseInt(prompt('Dame el valor A:'));
+        var valorB = parseInt(prompt('Dame valor B:'));
+     
+		var resultado=valorA + valorB; 
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+		
+    }
+
+
+</script>
+
+<p class="suma">      
+        <input name="Sumas" type="text" id="resultado" size="30" />
+    </p>
+        <input type="button" name="btn_suma" id="btn_suma" value="Suma" onClick="Suma()" />
+
+
+    <form name="F1" class="mul">
+            <select size="1" onclick="multipl()">
+            <option value="seleciona"></option>
+            </select>
+            <input type="text" name="T1" size="7" value=""> 
+            <input type="text" name="T2" size="7" value=""> 
+            <input type="text" name="T3" size="7" value=""> Total
+            </form>
+            <script>
+            function multipl(){document.F1.T3.value=(document.F1.T1.value)*(document.F1.T2.value)}
+            </script>
+
+
+    <input type="button" name="imprimir" value="Mas Cerca De Ti" onclick="window.print();" class="btn btn-primary btn-block" id="b"></input>
+
+    
+</body>
+</html>
